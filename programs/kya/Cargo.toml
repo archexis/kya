@@ -1,0 +1,25 @@
+[package]
+name = "kya"
+version = "0.1.0"
+description = "fuck u"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "kya"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+toml_datetime = "=1.1.0"
+block-buffer = "=0.10.4"
+toml_edit = "=0.21.0"
+solana-program = "=1.17.31"
+borsh = "=0.10.3"

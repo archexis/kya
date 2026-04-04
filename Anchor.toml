@@ -1,0 +1,16 @@
+[toolchain]
+anchor_version = "0.29.0"
+
+[features]
+seeds = true
+skip-lint = false
+
+[programs.devnet]
+kya_program = "11111111111111111111111111111111"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
