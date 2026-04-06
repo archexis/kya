@@ -17,9 +17,7 @@ idl-build = ["anchor-lang/idl-build"]
 default = []
 
 [dependencies]
-anchor-lang = "0.29.0"
-toml_datetime = "=1.1.0"
-block-buffer = "=0.10.4"
-toml_edit = "=0.21.0"
-solana-program = "=1.17.31"
-borsh = "=0.10.3"
+anchor-lang = "1.0.0"
+
+[lints.rust]
+unexpected_cfgs = { level = "allow", check-cfg = ['cfg(feature, values("anchor-debug"))'] }
